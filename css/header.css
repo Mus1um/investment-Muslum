@@ -1,0 +1,78 @@
+@import url(./font.css);
+/*Header*/
+header{
+    width: 100%;
+    .head-bottom{
+        display: flex;
+        margin-top: 12px;
+        
+        p{
+            margin-left: 10px;
+            color: #B4B8BF;
+            font-family: Montserrat;
+            font-size: 12px;
+             font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+            text-transform: uppercase;
+            &:nth-child(2){
+                color: #F5B458;
+                position: relative;
+            }
+            &:nth-child(2)::after{
+                content: ' ';
+                width: 1px;
+                height: 15px;
+                position: absolute;
+                background-color: #F5B458;
+                top: 2px;
+                left: -5px;
+                transform: rotate(-15deg);
+            }
+        }
+    }
+}
+header nav{
+    padding: 38px 0;
+    border-bottom: 1px solid #DCE0E5;
+    display: flex;
+    column-gap: 73px;
+    align-items: center;
+    ul{
+        display: flex;
+      align-items: center;
+     
+      li{
+       padding-left: 12px;
+       padding-right: 12px;
+        a{
+            transition: all 300ms;
+            text-decoration: none;
+            color: #465061;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0.84px;
+            img{
+                transition: all 300ms;
+            }
+            &:hover{
+                color: #F5B458;
+                img{
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+        &:last-child{
+            border-left: 1px solid #D5DAE3;
+        }
+      }
+    }
+    ul :nth-child(1) a{
+        color: #F5B458;
+    }
+}
+/*Header*/
