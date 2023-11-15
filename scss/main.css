@@ -80,15 +80,6 @@ header .banner .text-bottom span:nth-child(2) {
 header .banner .text-bottom span:nth-child(3) {
   opacity: 0.5;
 }
-header #banner-foto {
-  position: absolute;
-  right: 142px;
-  top: 0;
-}
-header #banner-foto img {
-  width: 945px;
-  height: 945px;
-}
 
 header nav {
   padding: 38px 0;
@@ -100,6 +91,39 @@ header nav {
 header nav ul {
   display: flex;
   align-items: center;
+}
+header nav ul .dropli {
+  position: relative;
+}
+header nav ul .dropli #drop2 {
+  width: 50px;
+}
+header nav ul .dropli #drop2 a {
+  padding: 0;
+}
+header nav ul .dropli .drop {
+  transition: all 300ms ease;
+  padding: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  height: 0px;
+  width: 240px;
+}
+header nav ul .dropli .drop li {
+  padding-bottom: 8px;
+  background-color: white;
+  transition: all 300ms ease;
+}
+header nav ul .dropli .drop li:hover {
+  background-color: #F5B458;
+}
+header nav ul .dropli .drop li a {
+  padding: 8px;
+  color: #1A2E51;
+}
+header nav ul .dropli:hover .drop {
+  height: 220px;
 }
 header nav ul li {
   padding-left: 12px;
@@ -125,7 +149,7 @@ header nav ul li a:hover {
 header nav ul li a:hover img {
   transform: rotate(-180deg);
 }
-header nav ul li:last-child {
+header nav ul li .endlii {
   border-left: 1px solid #D5DAE3;
 }
 
@@ -376,12 +400,152 @@ header nav ul li:last-child {
   left: 36px;
 }
 
+.section3 {
+  margin-top: 120px;
+  width: 100%;
+  background-color: #EFF1F2;
+}
+.section3 .right-texts {
+  margin-left: 40px;
+  margin-top: 88px;
+  width: 463px;
+}
+.section3 .right-texts h1 {
+  margin-bottom: 32px;
+  color: var(--DARK-Blue, #1A2E51);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+.section3 .right-texts .startp {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.36px;
+}
+.section3 .right-texts .endp {
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 300px;
+  color: var(--DARK-Blue, #1A2E51);
+  text-align: end;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding: 0 5px;
+  transition: all 300ms ease;
+}
+.section3 .right-texts .endp:hover {
+  background-color: #F5B458;
+}
+.section3 .right-texts .cart {
+  display: flex;
+  align-items: center;
+}
+.section3 .right-texts .cart .text {
+  margin-left: 23px;
+  margin-top: 20px;
+}
+.section3 .right-texts .cart .text h2 {
+  color: var(--BODY, #465061);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.section3 .right-texts .cart .text p {
+  color: var(--BODY, #465061);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 /*section-3*/
+/*section-4*/
+.section4 {
+  margin-top: 100px;
+}
+.section4 h1 {
+  color: var(--DARK-Blue, #1A2E51);
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.52px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 20px;
+}
+.section4 .img-box {
+  margin-top: 64px;
+}
+.section4 .img-box img {
+  width: 100%;
+  height: 100%;
+}
+.section4 .img-box p {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 16px;
+}
+.section4 .endp {
+  width: 200px;
+  margin: 54px auto;
+  color: var(--DARK-Blue, #1A2E51);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+.section4 .endp:hover {
+  background-color: #F5B458;
+}
+
+/*section-4*/
 /*Footer*/
+.footer-holding {
+  margin-top: 100px;
+  height: 136px;
+  background-color: #EDEFF0;
+}
+.footer-holding .holding-box {
+  padding: 46px 0;
+  width: 300px;
+  padding-left: 130px;
+}
+
 footer {
   background-color: #1A2E51;
   height: 366px;
-  margin-top: 100px;
 }
 footer .footer-top {
   padding-top: 56px;
