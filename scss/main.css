@@ -13,12 +13,19 @@ header {
   background-color: #1A2E51;
   height: 100vh;
 }
-header .banner .text {
-  width: 100%;
-  height: 100%;
-  margin-top: 250px;
+header .banner {
+  display: flex;
+  align-items: center;
 }
-header .banner .text h4 {
+header .banner .banner-left {
+  margin-left: 160px;
+  padding: 20px 130px;
+  width: 50%;
+}
+header .banner .banner-left .text {
+  padding-bottom: 250px;
+}
+header .banner .banner-left .text h4 {
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -27,7 +34,7 @@ header .banner .text h4 {
   line-height: 28px;
   letter-spacing: 0.36px;
 }
-header .banner .text h2 {
+header .banner .banner-left .text h2 {
   color: #FFF;
   font-family: Montserrat;
   font-size: 36px;
@@ -37,7 +44,7 @@ header .banner .text h2 {
   letter-spacing: 2.16px;
   text-transform: uppercase;
 }
-header .banner .text button {
+header .banner .banner-left .text button {
   margin-top: 48px;
   border: 1px solid #F5B458;
   background-color: #1A2E51;
@@ -46,10 +53,10 @@ header .banner .text button {
   transition: all 300ms ease;
   flex-shrink: 0;
 }
-header .banner .text button:hover {
+header .banner .banner-left .text button:hover {
   background-color: #F5B458;
 }
-header .banner .text button a {
+header .banner .banner-left .text button a {
   color: #FFF;
   text-align: center;
   font-family: Montserrat;
@@ -65,20 +72,29 @@ header .banner .text button a {
   padding-left: 64px;
   padding-right: 64px;
 }
-header .banner .text-bottom {
+header .banner .banner-left .text-bottom {
   display: flex;
 }
-header .banner .text-bottom span {
+header .banner .banner-left .text-bottom span {
   margin-left: 10px;
   width: 70px;
   height: 4px;
   background-color: #F5B458;
 }
-header .banner .text-bottom span:nth-child(2) {
+header .banner .banner-left .text-bottom span:nth-child(2) {
   opacity: 0.5;
 }
-header .banner .text-bottom span:nth-child(3) {
+header .banner .banner-left .text-bottom span:nth-child(3) {
   opacity: 0.5;
+}
+header .banner .banner-right {
+  width: 50%;
+  height: 944px;
+}
+header .banner .banner-right img {
+  width: 100%;
+  height: 100%;
+  margin-top: -127px;
 }
 
 header nav {

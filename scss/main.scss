@@ -12,10 +12,14 @@ header{
     background-color: #1A2E51;
     height: 100vh;
     .banner{
-        .text{
-            width: 100%;
-            height: 100%;
-            margin-top: 250px;
+        display: flex;
+        align-items: center;
+        .banner-left{
+            margin-left: 160px;
+            padding: 20px 130px;
+            width: 50%;
+              .text{
+               padding-bottom: 250px;
             h4{
                 color: #FFF;
                 font-family: Montserrat;
@@ -62,8 +66,7 @@ header{
                     padding-left: 64px;
                     padding-right: 64px;
                 }
-            }
-            
+            }  
         }
         .text-bottom{
             display: flex;
@@ -81,8 +84,16 @@ header{
             }
            
         }
-
-
+        }
+      .banner-right{
+        width: 50%;
+        height: 944px;
+        img{
+width: 100%;
+height: 100%;
+margin-top: -127px;
+        }
+      }
     }
 }
 header nav{
